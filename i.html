@@ -1,0 +1,23 @@
+<html>
+        <p>TIME IS</p>
+        <p id="p2"></p>
+            <script>
+
+                var today = new Date();
+                
+                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                document.getElementById("p2").innerHTML=time;
+                
+                </script>
+                <body>
+                    <p>TODAY IS</p>
+                    <p id="p3"></p>
+                    <script>
+                        var d = new Date();
+                        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                        document.getElementById("p3").innerHTML = days[d.getDay()];
+                    </script>
+                
+            </body>
+    
+</html>
